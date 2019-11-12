@@ -16,6 +16,6 @@ This is a code challenge project
 
 # Pre design
 ```
-RPCommentFactory     ->  RPComment     <->  RPCommentAdapter <-> ICodableComment     <-> Server
-RPAnnotationFactory  ->  RPAnnotation  <->  RPAnnotation     <-> ICodableAnnotation  <-> Server
+RPCommentFactory     ->  RPComment     <->  RPCommentAdapter    <-> ICodableComment     <-> Server
+RPAnnotationFactory  ->  RPAnnotation  <->  RPAnnotationAdapter <-> ICodableAnnotation  <-> Server
 ```
