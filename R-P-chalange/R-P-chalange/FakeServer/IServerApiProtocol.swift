@@ -10,5 +10,4 @@ import Foundation
 
 //Any that we have to support
 protocol IServerApiProtocol {
-	
 }

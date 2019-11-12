@@ -29,6 +29,10 @@
 		745E6468237A741700298A27 /* CommentServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6467237A741700298A27 /* CommentServerModel.swift */; };
 		745E646B237A756800298A27 /* AnnotationServerModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E646A237A756800298A27 /* AnnotationServerModelTest.swift */; };
 		745E646D237A757800298A27 /* CommentServerModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E646C237A757800298A27 /* CommentServerModelTest.swift */; };
+		745E646F237A795D00298A27 /* RPCommentAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E646E237A795D00298A27 /* RPCommentAdapter.swift */; };
+		745E6471237A798B00298A27 /* RPAnnotationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6470237A798B00298A27 /* RPAnnotationAdapter.swift */; };
+		745E6474237A79D800298A27 /* RPCommentAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6473237A79D800298A27 /* RPCommentAdapterTest.swift */; };
+		745E6476237A79F100298A27 /* RPAnnotationAdapterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6475237A79F100298A27 /* RPAnnotationAdapterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +72,10 @@
 		745E6467237A741700298A27 /* CommentServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentServerModel.swift; sourceTree = "<group>"; };
 		745E646A237A756800298A27 /* AnnotationServerModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationServerModelTest.swift; sourceTree = "<group>"; };
 		745E646C237A757800298A27 /* CommentServerModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentServerModelTest.swift; sourceTree = "<group>"; };
+		745E646E237A795D00298A27 /* RPCommentAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentAdapter.swift; sourceTree = "<group>"; };
+		745E6470237A798B00298A27 /* RPAnnotationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationAdapter.swift; sourceTree = "<group>"; };
+		745E6473237A79D800298A27 /* RPCommentAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentAdapterTest.swift; sourceTree = "<group>"; };
+		745E6475237A79F100298A27 /* RPAnnotationAdapterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationAdapterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +144,7 @@
 		745E643A237A4CDC00298A27 /* R-P-chalangeTests */ = {
 			isa = PBXGroup;
 			children = (
+				745E6472237A79C200298A27 /* Adapters */,
 				745E6469237A755100298A27 /* ServerModels */,
 				745E6456237A68E400298A27 /* Factories */,
 				745E6455237A606700298A27 /* RPModels */,
@@ -166,6 +175,8 @@
 		745E6448237A5BD600298A27 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				745E646E237A795D00298A27 /* RPCommentAdapter.swift */,
+				745E6470237A798B00298A27 /* RPAnnotationAdapter.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -230,6 +241,15 @@
 				745E646C237A757800298A27 /* CommentServerModelTest.swift */,
 			);
 			path = ServerModels;
+			sourceTree = "<group>";
+		};
+		745E6472237A79C200298A27 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				745E6473237A79D800298A27 /* RPCommentAdapterTest.swift */,
+				745E6475237A79F100298A27 /* RPAnnotationAdapterTest.swift */,
+			);
+			path = Adapters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745E646F237A795D00298A27 /* RPCommentAdapter.swift in Sources */,
 				745E6458237A691100298A27 /* RPCommentFactory.swift in Sources */,
 				745E6464237A71F100298A27 /* IServerApiProtocol.swift in Sources */,
 				745E6425237A4CDA00298A27 /* AppDelegate.swift in Sources */,
@@ -344,6 +365,7 @@
 				745E6466237A740700298A27 /* AnnotationServerModel.swift in Sources */,
 				745E6460237A706700298A27 /* ICodableComment.swift in Sources */,
 				745E6468237A741700298A27 /* CommentServerModel.swift in Sources */,
+				745E6471237A798B00298A27 /* RPAnnotationAdapter.swift in Sources */,
 				745E644E237A5CB000298A27 /* RPComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,8 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				745E645E237A697400298A27 /* RPAnnotationFactoryTest.swift in Sources */,
+				745E6476237A79F100298A27 /* RPAnnotationAdapterTest.swift in Sources */,
 				745E646B237A756800298A27 /* AnnotationServerModelTest.swift in Sources */,
 				745E646D237A757800298A27 /* CommentServerModelTest.swift in Sources */,
+				745E6474237A79D800298A27 /* RPCommentAdapterTest.swift in Sources */,
 				745E6454237A605900298A27 /* RPAnnotationTest.swift in Sources */,
 				745E643C237A4CDC00298A27 /* R_P_chalangeTests.swift in Sources */,
 				745E645C237A696100298A27 /* RPCommentFactoryTest.swift in Sources */,

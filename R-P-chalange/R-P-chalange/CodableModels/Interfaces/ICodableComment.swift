@@ -9,9 +9,7 @@
 import Foundation
 
 //This has to support ServerApi
-protocol ICodableComment: IServerApiProtocol, Codable, NSCopying, Equatable {
+protocol ICodableComment: IServerApiProtocol {
 	//Why not? We have to have something that not equal with RPComment
 	var commentInfo: [String: String] { get set }
 }
-
-//@inlinable public mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout UnsafeMutableBufferPointer<Element>) throws -> R) rethrows -> R?

@@ -9,8 +9,8 @@
 import Foundation
 
 //This has to support ServerApi
-protocol ICodableAnnotation: IServerApiProtocol, Codable, NSCopying, Equatable {
-	//Why not? We have to have something that not equal with RPComment
+protocol ICodableAnnotation: IServerApiProtocol {
+	//Why not? We have to have something that not equal with RPAnnotation
 	var anotationInfo: [String: String] { get set }
 }
 

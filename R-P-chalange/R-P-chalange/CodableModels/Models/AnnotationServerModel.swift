@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AnnotationServerModel: ICodableAnnotation {
+class AnnotationServerModel: ICodableAnnotation, Codable, NSCopying, Equatable {
 	var anotationInfo: [String: String] = [:]
 	
 	//MARK: Equatable

@@ -8,7 +8,8 @@
 
 import Foundation
 
-class CommentServerModel: ICodableComment {
+class CommentServerModel: ICodableComment, Codable, NSCopying, Equatable {
+	
 	var commentInfo: [String: String] = [:]
 	
 	//MARK: Equatable
