@@ -22,6 +22,9 @@
 		745E645A237A692300298A27 /* RPAnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6459237A692300298A27 /* RPAnnotationFactory.swift */; };
 		745E645C237A696100298A27 /* RPCommentFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E645B237A696100298A27 /* RPCommentFactoryTest.swift */; };
 		745E645E237A697400298A27 /* RPAnnotationFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E645D237A697400298A27 /* RPAnnotationFactoryTest.swift */; };
+		745E6460237A706700298A27 /* ICodableComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E645F237A706700298A27 /* ICodableComment.swift */; };
+		745E6462237A707800298A27 /* ICodableAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6461237A707800298A27 /* ICodableAnnotation.swift */; };
+		745E6464237A71F100298A27 /* IServerApiProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6463237A71F100298A27 /* IServerApiProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		745E6459237A692300298A27 /* RPAnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationFactory.swift; sourceTree = "<group>"; };
 		745E645B237A696100298A27 /* RPCommentFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentFactoryTest.swift; sourceTree = "<group>"; };
 		745E645D237A697400298A27 /* RPAnnotationFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationFactoryTest.swift; sourceTree = "<group>"; };
+		745E645F237A706700298A27 /* ICodableComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICodableComment.swift; sourceTree = "<group>"; };
+		745E6461237A707800298A27 /* ICodableAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICodableAnnotation.swift; sourceTree = "<group>"; };
+		745E6463237A71F100298A27 /* IServerApiProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IServerApiProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +173,7 @@
 		745E644A237A5C1A00298A27 /* FakeServer */ = {
 			isa = PBXGroup;
 			children = (
+				745E6463237A71F100298A27 /* IServerApiProtocol.swift */,
 			);
 			path = FakeServer;
 			sourceTree = "<group>";
@@ -174,6 +181,8 @@
 		745E644B237A5C7200298A27 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				745E645F237A706700298A27 /* ICodableComment.swift */,
+				745E6461237A707800298A27 /* ICodableAnnotation.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -305,11 +314,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				745E6458237A691100298A27 /* RPCommentFactory.swift in Sources */,
+				745E6464237A71F100298A27 /* IServerApiProtocol.swift in Sources */,
 				745E6425237A4CDA00298A27 /* AppDelegate.swift in Sources */,
+				745E6462237A707800298A27 /* ICodableAnnotation.swift in Sources */,
 				745E6427237A4CDA00298A27 /* SceneDelegate.swift in Sources */,
 				745E645A237A692300298A27 /* RPAnnotationFactory.swift in Sources */,
 				745E6429237A4CDA00298A27 /* ContentView.swift in Sources */,
 				745E6450237A5CDD00298A27 /* RPAnnotation.swift in Sources */,
+				745E6460237A706700298A27 /* ICodableComment.swift in Sources */,
 				745E644E237A5CB000298A27 /* RPComment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
