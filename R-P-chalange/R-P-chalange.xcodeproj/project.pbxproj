@@ -18,6 +18,10 @@
 		745E6450237A5CDD00298A27 /* RPAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E644F237A5CDD00298A27 /* RPAnnotation.swift */; };
 		745E6452237A604100298A27 /* RPCommentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6451237A604100298A27 /* RPCommentTest.swift */; };
 		745E6454237A605900298A27 /* RPAnnotationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6453237A605900298A27 /* RPAnnotationTest.swift */; };
+		745E6458237A691100298A27 /* RPCommentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6457237A691100298A27 /* RPCommentFactory.swift */; };
+		745E645A237A692300298A27 /* RPAnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E6459237A692300298A27 /* RPAnnotationFactory.swift */; };
+		745E645C237A696100298A27 /* RPCommentFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E645B237A696100298A27 /* RPCommentFactoryTest.swift */; };
+		745E645E237A697400298A27 /* RPAnnotationFactoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745E645D237A697400298A27 /* RPAnnotationFactoryTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		745E644F237A5CDD00298A27 /* RPAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotation.swift; sourceTree = "<group>"; };
 		745E6451237A604100298A27 /* RPCommentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentTest.swift; sourceTree = "<group>"; };
 		745E6453237A605900298A27 /* RPAnnotationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationTest.swift; sourceTree = "<group>"; };
+		745E6457237A691100298A27 /* RPCommentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentFactory.swift; sourceTree = "<group>"; };
+		745E6459237A692300298A27 /* RPAnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationFactory.swift; sourceTree = "<group>"; };
+		745E645B237A696100298A27 /* RPCommentFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCommentFactoryTest.swift; sourceTree = "<group>"; };
+		745E645D237A697400298A27 /* RPAnnotationFactoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPAnnotationFactoryTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		745E643A237A4CDC00298A27 /* R-P-chalangeTests */ = {
 			isa = PBXGroup;
 			children = (
+				745E6456237A68E400298A27 /* Factories */,
 				745E6455237A606700298A27 /* RPModels */,
 				745E643B237A4CDC00298A27 /* R_P_chalangeTests.swift */,
 				745E643D237A4CDC00298A27 /* Info.plist */,
@@ -124,6 +133,8 @@
 		745E6446237A5BBC00298A27 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				745E6457237A691100298A27 /* RPCommentFactory.swift */,
+				745E6459237A692300298A27 /* RPAnnotationFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -181,6 +192,15 @@
 				745E6453237A605900298A27 /* RPAnnotationTest.swift */,
 			);
 			path = RPModels;
+			sourceTree = "<group>";
+		};
+		745E6456237A68E400298A27 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				745E645B237A696100298A27 /* RPCommentFactoryTest.swift */,
+				745E645D237A697400298A27 /* RPAnnotationFactoryTest.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +304,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745E6458237A691100298A27 /* RPCommentFactory.swift in Sources */,
 				745E6425237A4CDA00298A27 /* AppDelegate.swift in Sources */,
 				745E6427237A4CDA00298A27 /* SceneDelegate.swift in Sources */,
+				745E645A237A692300298A27 /* RPAnnotationFactory.swift in Sources */,
 				745E6429237A4CDA00298A27 /* ContentView.swift in Sources */,
 				745E6450237A5CDD00298A27 /* RPAnnotation.swift in Sources */,
 				745E644E237A5CB000298A27 /* RPComment.swift in Sources */,
@@ -296,8 +318,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745E645E237A697400298A27 /* RPAnnotationFactoryTest.swift in Sources */,
 				745E6454237A605900298A27 /* RPAnnotationTest.swift in Sources */,
 				745E643C237A4CDC00298A27 /* R_P_chalangeTests.swift in Sources */,
+				745E645C237A696100298A27 /* RPCommentFactoryTest.swift in Sources */,
 				745E6452237A604100298A27 /* RPCommentTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
