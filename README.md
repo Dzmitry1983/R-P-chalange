@@ -1,6 +1,10 @@
 # R-P-chalange
 This is a code challenge project
 
+# Summury
+`RPComment` and `RPAnnotation` can be used as a `Data` and pass to a `Server` or anywhere else and can be recivied.
+Unit Tests work!
+
 
 # Assumptions
 1. - The best option is to avoid any changes of `RPComment` and `RPAnnotation`. It means that I have to use `Adapter` to convert from `RPComment` and `RPAnnotation` to storable types.
