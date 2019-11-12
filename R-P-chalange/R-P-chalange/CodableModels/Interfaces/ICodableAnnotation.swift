@@ -11,6 +11,6 @@ import Foundation
 //This has to support ServerApi
 protocol ICodableAnnotation: IServerApiProtocol, Codable, NSCopying, Equatable {
 	//Why not? We have to have something that not equal with RPComment
-	var commentInfo: [String: String] { get set }
+	var anotationInfo: [String: String] { get set }
 }
 
